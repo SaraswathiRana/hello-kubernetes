@@ -44,7 +44,7 @@ jobs:
           docker tag $IMAGE:$IMAGE_VERSION $IMAGE:$IMAGE_MAJOR_VERSION.$IMAGE_MINOR_VERSION
 
       - name: Log into registry
-        run: echo "${{ secrets.DOCKERHUB_PASSWORD }}" | docker login -u ${{ secrets.DOCKERHUB_USERNAME }} --password-stdin
+        run: docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
 
       - name: Push image and tags to registry
         run: |
