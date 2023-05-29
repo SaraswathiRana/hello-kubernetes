@@ -12,8 +12,8 @@ jobs:
     runs-on: ubuntu-latest
 
     env:
-      CONTAINER_REGISTRY: docker.io
-      CONTAINER_IMAGE: paulbouwer/hello-kubernetes
+      CONTAINER_REGISTRY: index.docker.io
+      CONTAINER_IMAGE: jsaraswathi/source-repo
 
     steps:
 
