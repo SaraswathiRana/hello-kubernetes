@@ -6,7 +6,6 @@ metadata:
 spec:
   selector:
     app: hello-kubernetes
-  type: NodePort
   ports:
   - port: 3306
-    nodePort: 32327
+    TargetPort: 3306
