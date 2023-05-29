@@ -14,6 +14,8 @@ jobs:
     env:
       CONTAINER_REGISTRY: index.docker.io
       CONTAINER_IMAGE: jsaraswathi/source-repo
+      DOCKER_USER: ${{secrets.DOCKER_USER}}
+      DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
 
     steps:
 
