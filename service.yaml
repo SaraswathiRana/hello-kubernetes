@@ -7,5 +7,5 @@ spec:
   selector:
     app: hello-kubernetes
   ports:
-  - port: 3306
-    targetPort: 3306
+  - port: 6379
+    targetPort: 6379
