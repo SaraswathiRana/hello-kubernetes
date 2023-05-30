@@ -15,7 +15,7 @@ app.set('view engine', 'handlebars');
 
 // Configuration
 
-var port = process.env.PORT || 6379;
+var port = process.env.PORT || 8080;
 var message = process.env.MESSAGE || 'Hello';
 var renderPathPrefix = (
   process.env.RENDER_PATH_PREFIX ? 
