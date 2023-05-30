@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: hello-kubernetes-svc
-  namespace: kube-s
+  namespace: kube
 spec:
   selector:
     app: hello-kubernetes
