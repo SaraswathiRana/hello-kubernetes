@@ -4,6 +4,7 @@ on:
 
   push: 
     branches: [ main ]
+    tags: ["v[0-9]+.[0-9]+.[0-9]*"]
 
 jobs:
 
@@ -16,7 +17,7 @@ jobs:
       CONTAINER_IMAGE: jsaraswathi/source-repo
       DOCKER_USER: ${{secrets.DOCKER_USER}}
       DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
-      IMAGE_VERSION: ${{ github.sha }}
+      IMAGE_VERSION: ${{ github.ref_name }}
 
     steps:
 
