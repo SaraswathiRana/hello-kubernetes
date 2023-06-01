@@ -14,5 +14,5 @@ spec:
         app: hello-kubernetes
     spec:
       containers:
-      - image: index.docker.io/jsaraswathi/source-repo
+      - image: index.docker.io/jsaraswathi/source-repo:latest
         name: hello-kubernetes
