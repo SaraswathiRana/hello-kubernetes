@@ -14,5 +14,5 @@ spec:
         app: hello-kubernetes
     spec:
       containers:
-      - image: index.docker.io/jsaraswathi/source-repo:${trigger[''tag'']}'
+      - image: index.docker.io/jsaraswathi/source-repo
         name: hello-kubernetes
