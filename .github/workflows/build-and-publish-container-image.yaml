@@ -26,6 +26,7 @@ jobs:
       - name: Build image and version variables
         run: |
           echo "IMAGE=$CONTAINER_REGISTRY/$CONTAINER_IMAGE" >> $GITHUB_ENV
+          
       - name: Build image
         run: | 
           docker build --tag "$IMAGE:$IMAGE_VERSION" \
@@ -33,7 +34,10 @@ jobs:
             --build-arg IMAGE_CREATE_DATE="`date -u +"%Y-%m-%dT%H:%M:%SZ"`" \
             --build-arg IMAGE_SOURCE_REVISION="`git rev-parse HEAD`" \
             --file src/app/Dockerfile src/app
-
+      - name: Create additional image tags
+        run: |
+          docker tag $IMAGE:latest 
+          
       - name: Log into registry
         run: docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
 
