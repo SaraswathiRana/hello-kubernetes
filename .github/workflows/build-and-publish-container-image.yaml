@@ -36,7 +36,7 @@ jobs:
             --file src/app/Dockerfile src/app
       - name: Create additional image tags
         run: |
-          docker tag $IMAGE:latest 
+          docker tag $IMAGE:$IMAGE_VERSION $IMAGE:latest 
           
       - name: Log into registry
         run: docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
