@@ -14,5 +14,6 @@ spec:
         app: hello-kubernetes
     spec:
       containers:
-      - image: index.docker.io/jsaraswathi/source-repo:203c7a59d100d4ee3717b80b11fb44aeaf21a8a4
+      - image: index.docker.io/jsaraswathi/source-repo
+        imagePullPolicy: Always
         name: hello-kubernetes
