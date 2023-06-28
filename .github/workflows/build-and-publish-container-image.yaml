@@ -13,7 +13,7 @@ jobs:
 
     env:
       CONTAINER_REGISTRY: index.docker.io
-      CONTAINER_IMAGE: jsaraswathi/source-repo
+      CONTAINER_IMAGE: jsaraswathi/source-demo
       DOCKER_USER: ${{secrets.DOCKER_USER}}
       DOCKER_PASSWORD: ${{secrets.DOCKER_PASSWORD}}
       IMAGE_VERSION: ${{ github.sha }}
