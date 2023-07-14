@@ -1,0 +1,13 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: hello-kubernetes-svc
+  namespace: spinnaker-app
+spec:
+  selector:
+    app: hello-kubernetes
+  ports:
+  - protocol: TCP
+    port: 8080
+    nodePort: 32329
+  type: NodePort
