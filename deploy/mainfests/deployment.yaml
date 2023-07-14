@@ -4,7 +4,7 @@ metadata:
   name: hello-kubernetes
   namespace: spinnaker-app
 spec:
-  replicas: 4
+  replicas: 1
   selector:
     matchLabels:
       app: hello-kubernetes
