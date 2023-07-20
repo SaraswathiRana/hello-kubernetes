@@ -14,5 +14,5 @@ spec:
         app: hello-kubernetes
     spec:
       containers:
-      - image: index.docker.io/jsaraswathi/source-demo:latest
+      - image: index.docker.io/jsaraswathi/flux-example:1.0.1
         name: hello-kubernetes
