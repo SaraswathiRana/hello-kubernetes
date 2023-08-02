@@ -41,5 +41,6 @@ jobs:
       - name: Push image and tags to registry
         run: |
           docker push $IMAGE:$IMAGE_VERSION
+          docker push $IMAGE:latest
         
 
