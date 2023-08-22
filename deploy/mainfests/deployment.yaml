@@ -2,9 +2,9 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: hello-kubernetes
-  namespace: hello-k8s
+  namespace: example
 spec:
-  replicas: 3
+  replicas: 6
   selector:
     matchLabels:
       app: hello-kubernetes
